@@ -38,8 +38,8 @@ const Formulario = (props) => {
                 />
                 <CampoTexto
                     obrigatorio={true}
-                    label="Cargo"
-                    placeholder="Digite seu cargo" 
+                    label="Posição"
+                    placeholder="Digite sua posição" 
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}
                 />
@@ -51,7 +51,7 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     obrigatorio={true}
-                    label="Time" 
+                    label="Game" 
                     itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
